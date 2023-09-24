@@ -8,6 +8,7 @@ import { ListUsersComponent } from './list-users/list-users.component';
 import { ProgressBarComponent } from './progress-bar/progress-bar/progress-bar.component';
 import { AuthorListComponent } from './authors/author-list/author-list.component';
 import { AuthorDetailsComponent } from './authors/author-details/author-details.component';
+import { ToggleComponent } from './toggle/toggle/toggle.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -15,7 +16,8 @@ import { AuthorDetailsComponent } from './authors/author-details/author-details.
     ListUsersComponent,
     ProgressBarComponent,
     AuthorListComponent,
-    AuthorDetailsComponent
+    AuthorDetailsComponent,
+    ToggleComponent
   ],
   imports: [
     BrowserModule,

@@ -32,6 +32,10 @@ export class AppComponent {
   currentProgress: number = 70;
   progressColor: string = 'blue'
 
+  checks: boolean = false ;
+  onHandleCheckChange(checkParam: any) {
+    this.checks = !checkParam
+  }
 
   constructor ( private localStorageService: localStorageService ) {
 
