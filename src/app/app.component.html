@@ -51,4 +51,29 @@
 <app-author-list></app-author-list>
 <br>
 <br>
-<app-toggle [checked]="checks" (checkChange)="onHandleCheckChange($event)" ></app-toggle>
+<app-toggle 
+[checked]="checks" 
+(checkChange)="onHandleCheckChange($event)" 
+></app-toggle>
+
+<app-toggle 
+[checked]="checks" 
+(checkChange)="onHandleCheckChange($event)" 
+></app-toggle>
+
+
+<ng-container *ngIf="showlast">
+    <app-toggle 
+    [checked]="checks" 
+    (checkChange)="onHandleCheckChange($event)" 
+    ></app-toggle>
+</ng-container>
+
+
+
+
+
+<input #toggleButton type="text" name="" id="">
+<button style="margin: 20px; background-color: bisque;" 
+(click)="showlast = !showlast"
+> showlast </button>
